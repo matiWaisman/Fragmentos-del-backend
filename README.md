@@ -1,5 +1,5 @@
 # Fragmentos-del-backend
-El objetivo de esta parte de la api en la cual trabaje es recibir links de productos y luego devolver los datos en forma de Json, con este json podemos mostrar desde el front end los datos del producto al usuario para que el suba su precio, talle y color deseado del producto, para despues recurrir al script de python.
+El objetivo de esta api es recibir links de productos y luego devolver los datos en forma de Json, con este json podemos mostrar desde el front end los datos del producto al usuario para que el suba su precio, talle y color deseado del producto, para despues recurrir al script de python.
 
 Hay algunas funciones que tienen bastantes ifs y trys y catch que estan para tener una sola función para recurrir en las distintas tiendas, una vez que estemos mas cerca del producto final voy a dejar más prolijas esas funciones que se que les falta. 
 
