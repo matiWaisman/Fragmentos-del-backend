@@ -10,7 +10,7 @@ namespace WebApplication1.Models
 {
 	public class Scraper
 	{
-		public static Producto ProductoScrapeado
+	public static Producto ProductoScrapeado
         {  
             get
             {   
@@ -22,12 +22,12 @@ namespace WebApplication1.Models
             }
         }
 		
-		public static Producto listarProducto()
+	public static Producto listarProducto()
         {
             return _ProductoScrapeado;
         }
 		
-		public static float cortarPrecio(string precioScrapeado)
+	public static float cortarPrecio(string precioScrapeado)
         {
             string precioFinal = "";
             string precioAux = "";
@@ -65,7 +65,7 @@ namespace WebApplication1.Models
             return precioF;
         }
 		
-		public static String obtenerImagen(HtmlDocument doc, string posicionDeLaImagen, string link)
+	public static String obtenerImagen(HtmlDocument doc, string posicionDeLaImagen, string link)
         {
             String linkImagen = "";
             var imgContainer = doc.DocumentNode.SelectSingleNode(posicionDeLaImagen);
@@ -74,7 +74,7 @@ namespace WebApplication1.Models
             return linkImagen;
         }
 		
-		public static void ScrapeDexter(string link)
+	public static void ScrapeDexter(string link)
         {
             //declaro variables
             string linkImagenes = "";
@@ -108,6 +108,6 @@ namespace WebApplication1.Models
             colorTemporal.StockTalle = allProducts;
             producto.ListColores.Add(colorTemporal);
             _ProductoScrapeado = producto;
-        }
-	}
+       }
+    }
 }
