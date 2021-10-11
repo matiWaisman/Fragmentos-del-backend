@@ -46,26 +46,6 @@ namespace WebApplication1.Models
                     resultado = Scraper.listarProducto();
                     return resultado;
                 }
-                /*
-                if (tiendaEncontrada.TipoDeTienda == TipoTienda.ADIDAS)
-                {
-                    Scraper.ScrapeAdidas(link);
-                    resultado = Scraper.listarProducto();
-                    return resultado;
-                }
-                if (tiendaEncontrada.TipoDeTienda == TipoTienda.FRAVEGA)
-                {
-                    Scraper.ScrapeFravega(link);
-                    resultado = Scraper.listarProducto();
-                    return resultado;
-                }*/
-                if (tiendaEncontrada.TipoDeTienda == TipoTienda.ZARA)
-                {
-                    Scraper.ScrapeZara(link);
-                    resultado = Scraper.listarProducto();
-                    resultado.IdTienda = tiendaEncontrada.IdTienda;
-                    return resultado;
-                }
                 else
                 {
                     Scraper.devolverProductoNull();
